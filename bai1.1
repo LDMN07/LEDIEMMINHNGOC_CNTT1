@@ -1,27 +1,24 @@
-#include <iostream>
-using namespace std;
-
-class PhanSo {
-private:
-    int tuSo;
-    int mauSo;
-
-public:
-    PhanSo() {
-        tuSo = 0;
-        mauSo = 1;
-    }
-    PhanSo(int tu, int mau) {
-        tuSo = tu;
-        mauSo = mau;
-    }
-    void nhapPhanSo() {
-        cout << "Nhap tu so: ";
-        cin >> tuSo;
-        cout << "Nhap mau so: ";
-        cin >> mauSo;
-    }
-    void xuatPhanSo() {
-        cout << tuSo << "/" << mauSo << endl;
-    }
-};
+#include < iostream >
+using namespace std ;
+struct Phanso {
+    int tu so 
+    int mau so 
+}
+void inputPhanso ( Phanso ps ) 
+{
+    cout << " nhap tu so : " ;
+    cin >> f.tuso;
+    cout << " nhap mau so : " ;
+    cin >> f.mauso ;
+}
+void outputPhanso(constPhanso & ps)
+{
+    cout << f.tuso << "/" << f.mauso ;
+}
+int main ()
+{
+    Fraction f ;
+    inputPhanso ( ps ) ;
+    outputPhanso ( ps ) ;
+    return 0 ;
+}
