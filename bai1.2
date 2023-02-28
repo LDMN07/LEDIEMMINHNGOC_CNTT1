@@ -1,13 +1,26 @@
 #include < iostream >
 using namespace std ;
-struct Phanso { 
+struct Phanso
+{ 
  int t,m ;
 }
-struct Honso  {
+struct Honso  
+{
  int phannguyen ;
  PHANSO ps ;
- }
-int main () {
+}
+void nhap Honso ( Honso & x )
+{
+ cin >> x.phannguyen ;
+ nhapphanso (x.ps) ;
+}
+void xuat Honso ( Honso & x ) 
+{
+ cout << x.phannguyen << " " ;
+ xuatphanso (x.ps) ;
+}
+int main ()
+{
  Honso a,b ;
  nhap Honso (a) ;
  nhap Honso (b) ;
@@ -15,11 +28,3 @@ int main () {
  xuat Honso (b) ;
  return 0 ;
 } 
-void nhap Honso ( Honso & x ) {
- cin >> x.phannguyen ;
- nhapphanso (x.ps) ;
-}
-void xuat Honso ( Honso & x ) {
- cout << x.phannguyen << " " ;
- xuatphanso (x.ps) ;
-}
