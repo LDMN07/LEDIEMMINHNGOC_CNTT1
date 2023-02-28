@@ -8,13 +8,13 @@ struct Phanso
 void inputPhanso ( Phanso ps ) 
 {
   cout << " nhap tu so : " ;
-  cin >> f.tuso;
+  cin >> ps.tuso;
   cout << " nhap mau so : " ;
-  cin >> f.mauso ;
+  cin >> ps.mauso ;
 }
-void outputPhanso(constPhanso & ps)
+void outputPhanso ( constPhanso & ps )
 {
-  cout << f.tuso << "/" << f.mauso ;
+  cout << ps.tuso << "/" << ps.mauso ;
 }
 int main ()
 {
