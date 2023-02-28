@@ -1,29 +1,18 @@
 #include < iostream >
 using namespace std ;
-class point 
-{
- public int x ;
- public int y ;
- 
- public point () ;
- {
-  x = 0 ;
-  y = 0 ;
- }
- public point ( int x, int y )
- {
-  this.x=x ;
-  this.y=y ;
- }
- public void input ()
- {
-  Console.Write ( " Nhap toa do x : " ) ;
-  x = int.Parse ( Console.ReadLine()) ;
-  Console.Write ( " Nhap toa do y : ) ;
-  y = int.Parse ( Console.ReadLine()) ;
- }
- public void output ()
- { 
-  Console.WriteLine ( "{0},{1}",x,y ) ;
- }
+struct Point {
+    int x;
+    int y;
+
+    void input() {
+        cout << "Nhap toa do x: ";
+        cin >> x;
+
+        cout << "Nhap toa do y: ";
+        cin >> y;
+    }
+
+    void output() {
+        cout << "(" << x << ", " << y << ")" << endl;
+    }
 }
