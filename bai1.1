@@ -1,28 +1,27 @@
-class bai11{
-int main() {
-    Fraction f;
-    f.input();
-    f.output();
-    return 0;
-}
+#include <iostream>
+using namespace std;
+
+class PhanSo {
 private:
-    int numerator; 
-    int denominator; 
+    int tuSo;
+    int mauSo;
 
 public:
-    Fraction(int n = 0, int d = 1) {
-        numerator = n;
-        denominator = d;
+    PhanSo() {
+        tuSo = 0;
+        mauSo = 1;
     }
-
-    void input() {
-        cout << "Enter the numerator: ";
-        cin >> numerator;
-        cout << "Enter the denominator: ";
-        cin >> denominator;
+    PhanSo(int tu, int mau) {
+        tuSo = tu;
+        mauSo = mau;
     }
-
-    void output() {
-        cout << numerator << "/" << denominator << endl;
+    void nhapPhanSo() {
+        cout << "Nhap tu so: ";
+        cin >> tuSo;
+        cout << "Nhap mau so: ";
+        cin >> mauSo;
     }
-}
+    void xuatPhanSo() {
+        cout << tuSo << "/" << mauSo << endl;
+    }
+};
