@@ -2,20 +2,18 @@
 using namespace std ;
 struct Point 
 {
-    int x;
-    int y;
+  int x;
+  int y;
+  void input() 
+  {
+    cout << "Nhap toa do x: ";
+    cin >> x;
 
-    void input() 
-    {
-        cout << "Nhap toa do x: ";
-        cin >> x;
-
-        cout << "Nhap toa do y: ";
-        cin >> y;
-    }
-
-    void output()
-    {
-        cout << "(" << x << ", " << y << ")" << endl;
-    }
-}
+    cout << "Nhap toa do y: ";
+    cin >> y;
+  }
+  void output()
+  {
+    cout << "(" << x << ", " << y << ")" << endl;
+  }
+ }
