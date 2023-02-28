@@ -1,0 +1,28 @@
+#include < iostream >
+using namespace std ;
+struct Point3D 
+{
+  float x ;
+  float y ;
+  float z ;
+}
+void inputPoin3D ( Point3D & p ) 
+{ 
+  cout << ( " Nhap toa do x : " ) ;
+  cin >> p.x ;
+  cout << ( " Nhap toa do y : " ) ;
+  cin >> p.y ;
+  cout << ( " Nhap toa do z : " ) ;
+  cin >> p.z ;
+}
+void outputPoint3D ( const Point3D & p )
+{
+  Console.WriteLine ( " << p.x << ", " << p.y << ", " << p.z << " ) ;
+}
+int main () 
+{
+  Point3D p ;
+  inputPoint3D ( p ) ;
+  outputPoint3D ( p ) ;
+  return 0 ;
+}
