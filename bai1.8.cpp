@@ -20,7 +20,7 @@ void xuatDuongThang(struct duongThang dt) {
  int main()
  {
         duongthang(dt);
- 	nhapduongthang(td);
- 	xuatduongthang(td);
+ 	nhapduongthang(dt);
+ 	xuatduongthang(dt);
  	return 0;
  }
