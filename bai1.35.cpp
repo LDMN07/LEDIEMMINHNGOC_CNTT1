@@ -27,7 +27,7 @@ void xuat SOTIETKIEM(SOTIETKIEM stk) {
     printf("Loai tiet kiem: %s\n", stk.loaiTietKiem);
     printf("Ho ten khach hang: %s\n", stk.hoTenKH);
     printf("So chung minh nhan dan: %d\n", stk.cmnd);
-    printf("Ngay mo so: %02d/%02d/%d\n", stk.ngayMoSo.tm_mday, stk.ngayMoSo.tm_mon, stk.ngayMoSo.tm_year + 1900);
+    printf("Ngay mo so: %02d/%02d/%d\n", stk.ngayMoSo.tm_mday, stk.ngayMoSo.tm_mon, stk.ngayMoSo.tm_year + 2023);
     printf("So tien gui: %.2f\n", stk.soTienGui);
 }
 
